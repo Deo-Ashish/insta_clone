@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+}
+
+#navbar {
+    height: 100vh;
+    width: 220px;
+    border-right: 1px solid rgba(255, 255, 255, 0.150);
+    padding: 8px 12px 20px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#insta-img {
+    width: 100%;
+    height: 6%;
+    padding: 25px 0px 16px 12px;
+}
+
+.insta-img {
+    height: 37px;
+    align-items: center;
+}
+
+#navbar a {
+    all: unset;
+    color: white;
+}
+
+#navbar i {
+    font-size: 1.4rem;
+}
+
+#profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* border: 2px solid white; */
+    object-fit: cover;
+}
+
+
+#options {
+    height: 87%;
+    font-size: 1rem;
+}
+
+.opt {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 27px;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.opt #inner {
+    color: white;
+    margin-left: -5px;
+}
+
+.option-9{
+    margin-left: -5px;
+}
+
+.opt span {
+    padding-left: 20px;
+}
+
+.opt:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* MAIN CONTENT */
+
+#two {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    overflow-y: auto;
+}
+
+#main-content {
+    width: 630px;
+    margin: 16px 20px 0px;
+}
+
+#stories {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 9px;
+    text-align: center;
+    overflow-x: auto;
+    gap: 17px;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 30px;
+}
+
+#stories:hover {
+    cursor: pointer;
+}
+
+#stories::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    height: 80px;
+    width: 80px;
+}
+
+#stories img {
+    height: 76px;
+    border-radius: 50%;
+    border: 3px solid;
+
+}
+
+
+.story {
+    padding: 4px;
+    border-radius: 50%;
+    background: conic-gradient(#962fbf, #fa7e1e, #d62976,
+            #feda75, #4f5bd5, #962fbf);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stories span {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+#feed {
+    display: flex;
+    flex-direction: column;
+}
+
+#recommendation {
+    display: flex;
+    width: 400px;
+
+}
+
+#posts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#post {
+    width: 470px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+#top .user-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+#top img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    color: white;
+    font-weight: 500;
+}
+
+.dot-menu {
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#mid img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+#mid {
+    display: flex;
+    justify-content: center;
+    width: 468px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.159);
+    border-radius: 5px;
+}
+#mid video {
+    display: flex;
+    justify-content: center;
+    width: 468px;
+    border-radius: 5px;
+}
+
+#bottom {
+    padding: 10px;
+    color: white;
+}
+
+#bottom i {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#bottom:hover {
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.save-icon {
+    margin-left: auto;
+}
+
+.likes,
+.caption,
+.comments {
+    margin: 5px 0;
+}
+
+.comment-box {
+    width: 100%;
+    padding: 8px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: white;
+    outline: none;
+}
+
+#recommendation a {
+    text-decoration: none;
+}
